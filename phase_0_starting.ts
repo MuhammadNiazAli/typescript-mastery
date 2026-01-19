@@ -1,4 +1,3 @@
-//what is typescript explain in hinglish?
 // TypeScript ek superset hai JavaScript ka jo static typing aur advanced features provide karta hai.
 // Iska matlab hai ki aap JavaScript ke saare features use kar sakte hain, 
 // saath hi aap apne code me types define kar sakte hain jo errors ko compile time par pakadta hai.
