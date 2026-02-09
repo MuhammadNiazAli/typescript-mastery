@@ -1,25 +1,36 @@
-# TypeScript Complete Mastery Guide
+<div align="center">
 
-From Beginner to Legendary Level
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+  <img src="./language/ts.avif" alt="TypeScript" width="120" />
+</a>
+<img src="./language/gord.png" alt="Guide Badge" width="120" />
+
+# TypeScript Complete Mastery Guide  
+**From Beginner to Legendary Level**
+
+Official TypeScript Website:  
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">typescriptlang.org</a>
+
+</div>
 
 ---
 
 ## Overview
 
-This repository represents a complete TypeScript learning journey.  
-It starts from absolute basics and ends with advanced expert-level concepts.
+This repository documents a complete TypeScript learning journey.  
+It starts with fundamentals and ends with expert-level type system mastery.
 
-This guide is designed for:
+This guide is for:
 
 - Beginners building strong foundations
 - JavaScript developers moving to TypeScript
 - Developers preparing for interviews
 - Professionals aiming for senior roles
-- Engineers who want deep internal understanding of TypeScript + typing systems
+- Engineers who want deep understanding of TypeScript + typing systems
 
 ---
 
-## Phase 1: Foundations (Beginner Level)
+## Phase 1: Foundations
 
 ### What is TypeScript
 
@@ -27,12 +38,12 @@ TypeScript is a superset of JavaScript that adds:
 
 - Static typing
 - Better tooling (autocomplete, refactor, safety)
-- Safer large-scale codebases
+- Stronger scaling for large codebases
 
 Key ideas:
 
-- Type checking at compile time
-- JavaScript output at runtime
+- Type checking happens at compile time
+- JavaScript runs at runtime (types are removed)
 
 ---
 
@@ -41,7 +52,7 @@ Key ideas:
 Essentials:
 
 - Install TypeScript
-- tsconfig.json basics
+- `tsconfig.json` basics
 - Compile: `tsc`
 - Watch mode: `tsc -w`
 
@@ -49,7 +60,7 @@ Common setups:
 
 - TypeScript + Node.js
 - TypeScript + Vite/React/Nuxt
-- ESLint + Prettier (optional but recommended)
+- ESLint + Prettier (recommended)
 
 ---
 
@@ -75,20 +86,20 @@ Concepts covered:
 
 ### Primitive Types
 
-- string
-- number
-- boolean
-- null
-- undefined
-- bigint
-- symbol
+- `string`
+- `number`
+- `boolean`
+- `null`
+- `undefined`
+- `bigint`
+- `symbol`
 
 ---
 
 ### Special Types
 
 - `any` (escape hatch)
-- `unknown` (safe alternative to any)
+- `unknown` (safe alternative)
 - `never` (impossible states)
 - `void` (no return)
 
@@ -106,9 +117,9 @@ Key concepts:
 
 Concepts:
 
-- readonly arrays
-- tuple labels
-- spread with tuples
+- `readonly` arrays
+- Tuple labels
+- Spread with tuples
 
 ---
 
@@ -133,8 +144,8 @@ Concepts:
 - Arithmetic
 - Comparison
 - Logical
-- Nullish coalescing `??`
-- Optional chaining `?.`
+- Nullish coalescing: `??`
+- Optional chaining: `?.`
 
 Understanding:
 
@@ -145,18 +156,18 @@ Understanding:
 
 ### Conditional Statements
 
-- if / else
-- switch
+- `if / else`
+- `switch`
 - ternary
 
 Concepts:
 
 - Guard clauses
-- Discriminated unions (later used heavily)
+- Discriminated unions (used later)
 
 ---
 
-## Phase 4: Functions (Strong Typing)
+## Phase 4: Functions
 
 ### Function Typing
 
@@ -172,7 +183,7 @@ Concepts:
 
 - Function type aliases
 - Call signatures
-- Overloads (function overload signatures)
+- Function overloads
 
 ---
 
@@ -180,7 +191,7 @@ Concepts:
 
 - Generics in functions
 - Constraints: `extends`
-- `this` typing in functions
+- `this` typing
 
 ---
 
@@ -204,8 +215,8 @@ Concepts:
 
 When to use:
 
-- Interface for extension/implementation
-- Type alias for unions/utility composition
+- `interface` for extension/implementation
+- `type` for unions and compositions
 
 ---
 
@@ -220,11 +231,11 @@ When to use:
 ### Intersections
 
 - `A & B`
-- Combining object shapes safely
+- Combining shapes safely
 
 ---
 
-## Phase 6: Generics (Intermediate to Advanced)
+## Phase 6: Generics
 
 ### Generic Basics
 
@@ -244,8 +255,8 @@ When to use:
 ### Utility Patterns with Generics
 
 - Reusable typed helpers
-- Safer APIs
-- Strongly typed collections
+- Safer public APIs
+- Strong typed collections
 
 ---
 
@@ -281,7 +292,7 @@ When to use:
 
 ---
 
-## Phase 8: Advanced Type System (Pro Level)
+## Phase 8: Advanced Type System
 
 ### Type Guards
 
@@ -294,7 +305,7 @@ When to use:
 
 ### Discriminated Unions
 
-- Tagged unions using a common literal property
+- Tagged unions using a shared literal field
 - Safe exhaustive checks
 
 ---
@@ -316,7 +327,7 @@ When to use:
 
 ---
 
-### keyof, typeof, indexed access types
+### `keyof`, `typeof`, indexed access types
 
 - `keyof T`
 - `typeof someValue`
@@ -327,25 +338,25 @@ When to use:
 ### Conditional Types
 
 - `T extends U ? X : Y`
-- Using conditional types for smart helpers
+- Type-level logic for helpers
 
 ---
 
 ### Mapped Types
 
-- Transforming object types
-- `Partial`, `Required`, `Readonly` patterns
+- Transform object types
+- How `Partial`, `Required`, `Readonly` work
 
 ---
 
 ### Template Literal Types
 
-- Build types like `"user:${string}"`
+- Build types like `` `user:${string}` ``
 - Safer string APIs
 
 ---
 
-## Phase 9: Utility Types (Must-Know)
+## Phase 9: Utility Types
 
 Built-in utilities:
 
@@ -362,7 +373,7 @@ Built-in utilities:
 
 Goal:
 
-- Build clean typed models without duplication
+- Clean typed models without duplication
 
 ---
 
@@ -371,8 +382,8 @@ Goal:
 ### Modules
 
 - `import / export`
-- default exports vs named exports
-- type-only imports: `import type`
+- Default exports vs named exports
+- Type-only imports: `import type`
 
 ---
 
@@ -394,7 +405,7 @@ Core options:
 
 - `baseUrl`
 - `paths`
-- Making imports clean in large projects
+- Cleaner imports in large projects
 
 ---
 
@@ -410,7 +421,7 @@ Core options:
 ### async/await
 
 - Return type inference
-- Error handling types (practical patterns)
+- Error handling patterns
 
 ---
 
@@ -418,7 +429,7 @@ Core options:
 
 - Typed responses
 - Runtime validation (Zod recommended)
-- Avoid trusting network types blindly
+- Don’t trust network types blindly
 
 ---
 
@@ -427,44 +438,44 @@ Core options:
 ### DOM Types
 
 - Typed elements: `HTMLInputElement`, `HTMLDivElement`
-- `querySelector` casting and narrowing
+- `querySelector` narrowing
 - Event typing: `MouseEvent`, `KeyboardEvent`, `SubmitEvent`
 
 ---
 
 ### Best Practices
 
-- Avoid unsafe type assertions
+- Avoid unsafe assertions
 - Prefer narrowing checks
-- Safe event target patterns
+- Safe `event.target` patterns
 
 ---
 
-## Phase 13: Error Handling & Debugging (Typed)
+## Phase 13: Error Handling & Debugging
 
 ### Error Handling
 
-- try/catch
-- safer error typing with `unknown`
-- narrowing errors
+- `try/catch`
+- Safer error typing with `unknown`
+- Narrowing errors
 
 ---
 
 ### Debugging Tools
 
-- source maps
-- ts-node / tsx tooling basics
-- breakpoints in VSCode
+- Source maps
+- `ts-node` / `tsx` basics
+- VSCode breakpoints
 
 ---
 
 ## Phase 14: Type Safety in Real Projects
 
-### Avoiding Any
+### Avoiding `any`
 
 - Use `unknown`
-- Validate at runtime
-- Build narrow layers (API boundary)
+- Validate runtime inputs
+- Narrow early at boundaries
 
 ---
 
@@ -473,14 +484,14 @@ Core options:
 Recommended:
 
 - Zod schema validation
-- Convert runtime data → typed domain models
+- Convert runtime data → typed models
 
 ---
 
 ### Layered Typing
 
-- DTO types (API)
-- Domain types (business)
+- DTOs (API)
+- Domain models (business)
 - View models (UI)
 
 ---
@@ -497,9 +508,9 @@ Recommended:
 ## Phase 16: Performance & DX
 
 - Faster builds (incremental)
-- Project references (big repos)
+- Project references (monorepos)
 - Type-checking vs transpiling separation
-- Avoid slow type patterns in huge codebases
+- Avoid slow type patterns in large codebases
 
 ---
 
@@ -512,7 +523,7 @@ Recommended:
 
 ---
 
-## Phase 18: TypeScript Internals (Legend Level)
+## Phase 18: TypeScript Internals
 
 ### How TS Works
 
@@ -526,7 +537,7 @@ Recommended:
 
 - Interface merging
 - Module augmentation
-- Extending third-party libs safely
+- Extending third-party libraries safely
 
 ---
 
@@ -540,13 +551,13 @@ Recommended:
 
 ## Final Verdict
 
-You now understand TypeScript from:
+You now understand TypeScript across:
 
-- Basic typing
+- Core typing
 - Functions and OOP with types
 - Generics and utility types
 - Advanced type system (mapped, conditional, template literals)
-- Project configuration and build systems
+- Project configuration and builds
 - Production-grade typing patterns
 
 This is **professional, senior-level TypeScript knowledge**.
@@ -555,7 +566,7 @@ This is **professional, senior-level TypeScript knowledge**.
 
 ## Next Level
 
-After this:
+After this guide:
 
 - Framework typing (React, Vue, Nuxt, Next)
 - Backend TypeScript (Node.js, NestJS)
@@ -567,16 +578,16 @@ After this:
 
 ## Conclusion
 
-This guide turns you into:
+This guide helps you become:
 
 - Strong problem solver
 - Confident interviewer
 - Production-ready engineer
-- TypeScript architect
+- TypeScript-focused architect
 
-You are no longer just a developer.  
-You understand how TypeScript typing actually works.
+You don’t just write TypeScript.  
+You understand how the type system works.
 
 ---
 
-End of TypeScript Journey
+_End of TypeScript Journey_
